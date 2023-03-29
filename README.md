@@ -13,7 +13,7 @@ https://dummyjson.com/docs#intro-limit
 
 ## Used Libraries/Packages
 
-#### Taiwind/Daisy UI
+### Taiwind/Daisy UI
 
 Used to make a quick, pretty and functioning UI. Since not information was given I concluded no a costum solution is needed. I also used the Daisy UI modal solution.
 
