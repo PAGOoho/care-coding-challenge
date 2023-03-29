@@ -1,45 +1,45 @@
-### CARE Coding Challenge
+# CARE Coding Challenge
 
 ## Problems and Solutions
 
-# Dummy-API
+### Dummy-API
 
 Since I can't update the API-Data, he will not find new Posts when I want to edit and delete them. I still wanted to show how its done but it will result in a 404-Error. I worked with the data in the frontend it to show the state changes but I also made the API-Errors visible.
 
-# Query Limitations
+### Query Limitations
 
 Due to limitations to the API I couldn't order the response within the query (e.g. ?order=desc). since I normally wouldnt know the size it wouldn't make sense to work with limit and skip since I would need only the last 50. Therfore I queried all posts and managed/limited them in the frontend.
 https://dummyjson.com/docs#intro-limit
 
 ## Used Libraries/Packages
 
-# Taiwind/Daisy UI
+#### Taiwind/Daisy UI
 
 Used to make a quick, pretty and functioning UI. Since not information was given I concluded no a costum solution is needed. I also used the Daisy UI modal solution.
 
-# Axion
+### Axion
 
 I prefer Axion when working with APIs instead of fetch. It's a bit simplyfied and prettier in my opinion.
 
-# Toastify
+### Toastify
 
 Toastify is used to make simple error- and success-messages.
 
 ## What I tried to archieve
 
-# I tried to archieve to fullfill all requirements from the task.
+### I tried to archieve to fullfill all requirements from the task.
 
-# I tried to build it so it can be scaleable.
+### I tried to build it so it can be scaleable.
 
 In case of more forms/modal-types, additional API-Calls ...
 
-# I tried to make the code understandable and made different files for differen purposes
+### I tried to make the code understandable and made different files for differen purposes
 
 Using the PostContext as a controller to share functions and states, using the PostApiAction.js only for API-Calls and the PostReducer.js to manage all the states.
 Also I created a layout-folder for shared, layout-specific, jsx-files.
 And a helper-folder for small helper-functions.
 
-# I tried to make a userfriendly UI/UX
+### I tried to make a userfriendly UI/UX
 
 I stuck to the well-made Daisy-UI-Look and adjusted it with Tailwind classes.
 I only added a few lines of CSS which I simply put in the index.css since it was only a small amount.
