@@ -16,7 +16,7 @@ function PostFormEdit() {
       const updatedData = { ...editData, title: titleValue, body: textValue };
       handleEdit(updatedData);
     } else {
-      toast.error('Please fill out the formular.');
+      toast.error('Please fill out the form.');
     }
   };
   return (

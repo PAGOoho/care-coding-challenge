@@ -19,7 +19,7 @@ function PostFormNew() {
       };
       handleAdd(newPost);
     } else {
-      toast.error('Please fill out the formular.');
+      toast.error('Please fill out the form.');
     }
   };
   return (
