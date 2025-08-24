@@ -9,16 +9,15 @@ import PostsContext from '../context/PostContext';
 function PostList() {
   const { posts, userId } = useContext(PostsContext);
 
+  console.log(posts);
+
   return (
     <section className="postwrapper">
       {userId && <PostNew />}
       {posts.length === 0 && <Spinner />}
-      {posts
-        .slice(-50)
-        .reverse()
-        .map((post) => (
-          <PostItem key={post.id} post={post} />
-        ))}
+      {posts.map((post) => (
+        <PostItem key={post.id} post={post} />
+      ))}
     </section>
   );
 }

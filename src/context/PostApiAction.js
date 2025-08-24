@@ -15,7 +15,7 @@ const posts = axios.create({
 export const getPosts = async () => {
   try {
     const response = await posts.get(`/posts?limit=${MAX_POSTS}`);
-    return response.data.posts;
+    return response.data.posts.slice(-50).reverse();
   } catch (err) {
     errorCheck(err);
     return false;

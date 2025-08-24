@@ -34,7 +34,8 @@ function PostItem({ post }) {
           </address>
         )}
         <p>
-          Reactions: <b>{post.reactions ? post.reactions : 0}</b>
+          Likes: <b>{post.reactions.likes || 0}</b> Dislikes:{' '}
+          <b>{post.reactions.dislikes || 0}</b>
         </p>
         {post.userId === userId && (
           <div className="card-actions justify-end">
