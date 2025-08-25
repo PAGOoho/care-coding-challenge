@@ -31,7 +31,7 @@ const postReducer = (state, action) => {
     case 'ADD_POST':
       return {
         ...state,
-        posts: [...state.posts, action.payload],
+        posts: [action.payload, ...state.posts],
         triggerFetchUser: !state.triggerFetchUser,
         form: null,
         modal: false,
